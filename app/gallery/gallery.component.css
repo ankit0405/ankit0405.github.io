@@ -1,0 +1,76 @@
+.bgprop{
+    background-color: #ffd1dc;
+    margin-bottom: 5%;
+}
+
+/* .row{
+    margin-top: 5%;
+} */
+
+.divclass {
+    display: block;
+    font-size: 0;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    max-width: 1050px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+
+grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 75px;
+  grid-gap: 10px;
+}
+
+h2,h4{
+    color: #002366;
+    font-size: x-large;
+    font-family: cursive;
+}
+
+.thumbnail{
+    height: 350px;
+    width: 100%;
+    max-height: 400px;
+}
+  
+  figure {
+    display: block;
+    margin: 0 auto 20px auto;
+    vertical-align: top;
+  }
+  
+  figcaption {
+    background-color: transparent;
+    border: 2px solid white;
+    font: 12px arial, sans-serif;
+    margin-top: -4px;
+    padding: 10px 5px;
+    text-align: center;
+    color: #002366;
+    font-size: medium;
+    font-family: cursive;
+
+  }
+  
+  @media screen and (min-width: 768px) {
+    figure {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    figure:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    /* Placeholder */
+  }
+

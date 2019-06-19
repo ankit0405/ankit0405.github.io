@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body{
+    background-color:  #ffd1dc;
+}
+
+.modal-backdrop.fade
+{
+  opacity: 0.5 !important;
+}
+.modal-open .modal
+{
+  opacity: 1 !important;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+
+}
+
+.modal-content {
+  background: #ffd1dc;
+
+}
+

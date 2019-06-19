@@ -1,0 +1,26 @@
+span,p,div{
+    color: #002366;
+    font-size: medium;
+    text-align: justify;
+}
+
+.text-danger{
+    color: red;
+    font-size: medium;
+}
+
+.container{
+    margin-top: 5%;
+}
+
+tr{
+    margin: 10px;
+}
+
+td{
+    margin: 10px;
+}
+
+.bgprop{
+    background-color: #ffd1dc;
+}

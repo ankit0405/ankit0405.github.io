@@ -1,0 +1,80 @@
+<div class="bgprop">
+  <div class="container" style="border: black solid 2px; margin-top: 5%">
+    <div *ngIf="id === 'ourwork'" style="text-align: center">
+      <h2>Welcome to the Gallery!</h2>
+      <h4>Take a look at our works so far!</h4>
+    </div>
+    
+    <div *ngIf="id === 'loveweget'" style="text-align: center">
+      <h2>What our clients say about us!</h2>
+    </div>
+        
+    <div class="row divclass">
+      <<ng-container *ngIf="id === 'ourwork' && (items.length > 0)">
+          <div *ngFor="let item of items" class="col-lg-4 col-sm-6 col-xs-12">
+              <figure>
+                  <img class="thumbnail" src="{{item.path}}" alt="">
+                  <figcaption>
+                    {{item.title}}
+                  </figcaption>
+                </figure>
+            </div>      
+      </ng-container>
+      
+      <<ng-container *ngIf="id === 'loveweget'">
+          <div *ngFor="let item of appreciations" class="col-lg-4 col-sm-6 col-xs-12">
+              <figure>
+                  <img class="thumbnail" src="{{item.path}}" alt="">
+                  <figcaption>
+                    {{item.title}}
+                  </figcaption>
+                </figure>
+            </div>      
+      </ng-container>
+      
+
+    </div>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+      </a>
+  </div>
+</div> -->

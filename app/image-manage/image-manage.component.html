@@ -1,0 +1,49 @@
+<div class="container">
+  <h4>To add image, click this button. <button class="btn btn-info" (click)="addImage()">Add Image</button></h4>
+
+  <h2 style="text-align:center">Uploaded Designs</h2>
+ 
+<div class="table-responsive">
+<table class="col-lg-4 col-sm-6 col-xs-12">
+    <colgroup width="10%"></colgroup>  
+    <colgroup width="50%"></colgroup>  
+    <colgroup width="20%"></colgroup>  
+    <colgroup width="20%"></colgroup> 
+  <tr>
+    <th>S. No.</th>
+    <th>Image Title</th>
+    <th>Image Preview</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let item of items, let i=index;">
+    <td>{{i+1}}</td>
+    <td><div class="imageCaption">{{item.title}}</div></td>
+    <td style="text-align:center"><img [src]="item.path" width="50" height="50"></td>
+    <td><button class="btn btn-warn" (click)="deleteImage($event, item)">Delete image</button></td>
+  </tr>
+</table>
+</div>
+
+<h2 style="text-align:center">Uploaded Testimonials</h2>
+  
+<div class="table-responsive">
+<table class="col-lg-4 col-sm-6 col-xs-12">
+  <colgroup width="10%"></colgroup>  
+  <colgroup width="50%"></colgroup>  
+  <colgroup width="20%"></colgroup>  
+  <colgroup width="20%"></colgroup>  
+  <tr>
+    <th>S. No.</th>
+    <th>Image Title</th>
+    <th>Image Preview</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let item of appreciations, let i=index;">
+    <td>{{i+1}}</td>
+    <td><div class="imageCaption">{{item.title}}</div></td>
+    <td style="text-align:center"><img [src]="item.path" width="50" height="50"></td>
+    <td><button class="btn btn-warn" (click)="deleteTestimonial($event, item)">Delete image</button></td>
+  </tr>
+</table>
+</div>
+</div>

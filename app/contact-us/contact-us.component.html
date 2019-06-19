@@ -1,0 +1,46 @@
+<div class="bgprop">
+  <div class="container">
+    <form [formGroup]="contactUsForm">
+      <div class="form-group" >
+        <label for="name">Name:</label>
+        <input type="text" required class="form-control" formControlName="name" id="name">
+      </div>
+      <div class="text-danger" *ngIf="contactUsForm.controls.name.invalid && contactUsForm.controls.name.touched && contactUsForm.controls.name.errors?.required">
+            Name is required.
+      </div>
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" required formControlName="email" id="email">
+      </div>
+            <div class="text-danger" *ngIf = "contactUsForm.controls.email.invalid && contactUsForm.controls.email.touched && contactUsForm.controls.email.errors?.required">
+                Email field can't be blank
+            </div>
+    
+            <div class="text-danger" *ngIf = "contactUsForm.controls.email.invalid && contactUsForm.controls.email.touched && contactUsForm.controls.email.errors?.pattern">
+                The email id doesn't seem right
+            </div>
+      <div class="form-group">
+        <label for="contact">Phone Number:</label>
+        <input type="text" class="form-control" required formControlName="contact" id="contact">
+      </div>
+      <div class="text-danger" *ngIf="contactUsForm.controls.name.invalid && contactUsForm.controls.contact.touched && contactUsForm.controls.contact.errors?.required">
+              We need the phone number to contact you!
+      </div>
+      <div class="form-group">
+        <label for="desc">Order Description:</label>
+        <textarea rows="3" id="desc" class="form-control" formControlName="desc" required></textarea>
+      </div>
+      <div class="text-danger" *ngIf="contactUsForm.controls.name.invalid && contactUsForm.controls.desc.touched && contactUsForm.controls.desc.errors?.required">
+                Order Description helps us serve you better!
+      </div>
+      <div>
+          <button [disabled]="!contactUsForm.valid" (click)="submitDetails($event)"  type="submit" class="btn btn-primary">Submit</button>
+      </div>
+</form>
+
+<div style="text-align:center">
+  You can also follow us on <a href="https://www.facebook.com/SolidsandPastels/">Facebook</a> and <a href="https://www.instagram.com/solidsandpastels/">Instagram</a>.
+</div>
+
+  </div>
+</div>

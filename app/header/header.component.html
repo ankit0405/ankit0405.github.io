@@ -1,0 +1,16 @@
+<div class="">
+  <nav class="navbar-inverse navbar-expand-sm" style="height: 80px;">
+    <a routerLink="/home" class="navbar-brand" style="height: auto">
+        <img src="assets/logo.jpg" height="auto" width="90" alt="CoolBrand">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarCollapse" style="padding-top: 2%;">
+        <div class="navbar-nav">
+            <a routerLink="/home" class="nav-item nav-link active"><span>Home</span></a>
+            <a [routerLink]="['/gallery','ourwork']" class="nav-item nav-link"><span>Gallery!</span></a>
+            <a [routerLink]="['/testimonials','loveweget']" class="nav-item nav-link"><span>Testimonials</span></a>            
+            <a routerLink="/managefiles" class="nav-item nav-link"><span>Manage Files</span></a>
+            <a routerLink="/contactus" class="nav-item nav-link"><span>Contact Us!</span></a>
+        </div>
+    </div>
+</nav>
+</div>

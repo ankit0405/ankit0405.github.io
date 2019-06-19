@@ -1,0 +1,34 @@
+table, th, td, tr{
+    border: 2px solid black;
+    width: 100%;
+}
+table{
+    table-layout: fixed;
+}
+
+td,tr,th{
+    padding:5px;
+}
+
+.container{
+    margin-top: 5%;
+    margin-bottom : 2%
+}
+
+.imageCaption{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #002366;
+    font-family: cursive;
+}
+
+div{
+    color: #002366;
+    font-size: medium;
+    text-align: justify;
+}
+h2,h3{
+    color: #002366;
+
+}
